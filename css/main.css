@@ -269,3 +269,49 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+
+.quote-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  word-wrap: break-word;
+}
+.quote-date {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .quote-text {
+      font-size: 1rem;
+  }
+  .quote-date {
+      font-size: 0.8rem;
+  }
+}
+
+.mquote-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.mquote-box:hover {
+  transform: translateY(-5px);
+}
+.mquote-text {
+  color: #555;
+}
+.mquote-date {
+  text-align: right;
+}
+.mquote-link {
+  text-decoration: none;
+  color: inherit;
+}

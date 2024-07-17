@@ -92,3 +92,70 @@
 
 
 })();
+
+const quotes = [
+  { text: "No matter how negative the people around you are, try to take positive things from everyone. Everyone has their own perspective and way of living, shaped by their childhood and what they learned from their parents. Look for the positive in everything, no matter how bad the person or situation may seem.", date: "July 17, 2024" },
+  /* {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""},
+  {text: "", date: ""} */
+
+];
+
+const quotesPerPage = 5;
+let currentPage = 1;
+
+function displayQuotes(page) {
+  const start = (page - 1) * quotesPerPage;
+  const end = start + quotesPerPage;
+  const quotesToShow = quotes.slice(start, end);
+
+  const container = document.getElementById('quotes-container');
+  container.innerHTML = '';
+  quotesToShow.forEach(quote => {
+      const quoteBox = document.createElement('div');
+      quoteBox.className = 'quote-box';
+      quoteBox.innerHTML = `
+          <p class="quote-text mb-1">${quote.text}</p>
+          <p class="quote-date text-muted mb-0">- ${quote.date}</p>
+      `;
+      container.appendChild(quoteBox);
+  });
+}
+
+function setupPagination() {
+  const pageCount = Math.ceil(quotes.length / quotesPerPage);
+  const pagination = document.getElementById('pagination');
+  pagination.innerHTML = '';
+
+  for (let i = 1; i <= pageCount; i++) {
+      const pageItem = document.createElement('li');
+      pageItem.className = 'page-item' + (i === currentPage ? ' active' : '');
+      const pageLink = document.createElement('a');
+      pageLink.className = 'page-link';
+      pageLink.href = '#';
+      pageLink.innerText = i;
+      pageLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          currentPage = i;
+          displayQuotes(currentPage);
+          setupPagination();
+      });
+      pageItem.appendChild(pageLink);
+      pagination.appendChild(pageItem);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayQuotes(currentPage);
+  setupPagination();
+});
