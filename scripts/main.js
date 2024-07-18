@@ -95,7 +95,6 @@
 
 const quotes = [
   {text: `"No matter how intelligent you are, always be humble. Don't act like you know everything or try to prove your abilities. If you do, there will be two types of people: those who support you and those who try to pull you back. Supporters are rare, but many will try to prove you wrong and hold you back "`, date: "July 18, 2024"},
-
   { text: `"No matter how negative the people around you are, try to take positive things from everyone. Everyone has their own perspective and way of living, shaped by their childhood and what they learned from their parents. Look for the positive in everything, no matter how bad the person or situation may seem."`, date: "July 17, 2024" }
   /* {text: "", date: ""},
   {text: "", date: ""},
