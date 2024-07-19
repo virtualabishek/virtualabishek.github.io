@@ -94,7 +94,7 @@
 })();
 
 const quotes = [
-  {text: `"If you’re already thinking about what others are thinking, what do you think they are thinking?"`, date: "July 19, 2024"},
+  {text: `"If you’re thinking about what others are thinking by yourself, what do you think they are thinking?"`, date: "July 19, 2024"},
   /*  {text: "", date: ""},
   {text: "", date: ""},
   {text: "", date: ""},
