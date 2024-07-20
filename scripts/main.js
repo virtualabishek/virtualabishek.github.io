@@ -94,9 +94,9 @@
 })();
 
 const quotes = [
+  {text: `"These days, the internet is full of inspirational sayings, movies, and postings. However, what matters most is how much you use them in your life, regardless of how much you read or watch.  Nothing is permanent, not even your beliefs, driving forces, or favorite quotations. Maybe you only remember them when you're in a good mood. When you're feeling down or unhappy, i'm sure you lose sight of your motivation."`, date: "July 20, 2024"},
   {text: `"If you’re thinking about what others are thinking by yourself, then what will they think about?"`, date: "July 19, 2024"},
-  /*  {text: "", date: ""},
-  {text: "", date: ""},
+  /*{text: "", date: ""},
   {text: "", date: ""},
   {text: "", date: ""},
   {text: "", date: ""},
