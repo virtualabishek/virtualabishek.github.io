@@ -94,15 +94,16 @@
 })();
 
 const quotes = [
+  {text: `“Everything feels copied these days, even what I am writing here. It’s hard to find anything original or pure anymore—whether it’s people or ideas. It makes me wonder if we can still be real with all the fake stuff around.”`, date: "July 22, 2024"},
   {text: `"Focus on the ones who cherish you, not the ones who simply surround you."`, date: "July 21, 2024"},
   {text: `"These days, the internet is full of inspirational sayings, movies, and postings. However, what matters most is how much you use them in your life, regardless of how much you read or watch.  Nothing is permanent, not even your beliefs, driving forces, or favorite quotations. Maybe you only remember them when you're in a good mood. When you're feeling down or unhappy, i'm sure you lose sight of your motivation."`, date: "July 20, 2024"},
   {text: `"If you’re thinking about what others are thinking by yourself, then what will they think about?"`, date: "July 19, 2024"},
-  /*{text: "", date: ""},
-  {text: "", date: ""},
-  {text: "", date: ""},
-  {text: "", date: ""},
-  {text: "", date: ""},
-  {text: "", date: ""},
+ /* {text: "", date: "July 2, 2024"},
+  {text: "", date: "July 2, 2024"},
+  {text: "", date: "July 2, 2024"},
+  {text: "", date: "July 2, 2024"},
+  {text: "", date: "July 2, 2024"},
+  {text: "", date: "July 2, 2024"},
   {text: "", date: ""},
   {text: "", date: ""},
   {text: "", date: ""} */
