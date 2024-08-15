@@ -36,32 +36,34 @@
                 <a href="https://twitter.com/virtualabishek" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://linkedin.com/in/virtualabishek" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/virtualabishek" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:your.email@717abishekneupane@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:717abishekneupane@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </div>
 
     <script>
-        // Initialize 
-        var startTime = new Date().getTime();
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set the start date of the project (Nepal Time: 2023/8/15 at 3:12 PM)
+            const startDate = new Date("2024-08-15T15:12:00+05:45").getTime();
 
-        // Update the countdown every 1 second
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = now - startTime;
+            // Update the countdown every 1 second
+            const countdownFunction = setInterval(function() {
+                const now = new Date().getTime();
+                const elapsed = now - startDate;
 
-            // Calculating the time
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Time calculations for days, hours, minutes, and seconds
+                const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
 
-            // converting into days, hours, minutes, seconds
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-        }, 1000);
+                // Display the result in the elements with corresponding ids
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+            }, 1000);
+        });
     </script>
 </body>
 </html>
