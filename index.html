@@ -1,73 +1,612 @@
-<!-- Currently working on new Protfolio using react. The old protfolio is being removed from this
- domain.You can find by my github repo. -->
+<!-- Don't see my code  LOL-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="./dummy.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="left">
-            <div class="countdown">
-                <div class="time">
-                    <span id="days">0</span>
-                    <span>days</span>
-                </div>
-                <div class="time">
-                    <span id="hours">0</span>
-                    <span>hours</span>
-                </div>
-                <div class="time">
-                    <span id="minutes">0</span>
-                    <span>minutes</span>
-                </div>
-                <div class="time">
-                    <span id="seconds">0</span>
-                    <span>seconds</span>
-                </div>
-            </div>
+    <meta http-equiv="X-UA-Compatible" content="Virtual Abishek: Protfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Abishek, A devloper! </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    </noscript>
+    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="index.html">Virtual Abishek</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#quotes">Quotes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="pythoncourse.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="right">
-            <h1>COMING SOON</h1>
-            <p>The new portfolio website is under construction. Please contact me through below.</p>
-            <div class="social-icons">
-                <a href="https://twitter.com/virtualabishek" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/virtualabishek" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/virtualabishek" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:717abishekneupane@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      </nav>
+    </header>
+    <div class="page-content">
+      <div id="content">
+<header>
+  <div class="cover bg-light">
+    <div class="container px-3">
+      <div class="row">
+        <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>
+        <div class="col-lg-6">
+          <div class="mt-5">
+            <p class="lead text-uppercase mb-1">Hello!</p>
+            <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Virtual Abishek</h1>
+            <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Devloper & Learner </p>
+            <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+              <nav role="navigation">
+                <ul class="nav justify-conten=t-left">
+                  <li class="nav-item"><a class="nav-link" href="https://twitter.com/virtualabishek" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" title="Facebook" onclick="alert('Sorry, My facebook is currently on deactivate mode. I am more active at Twitter and Linkedin. Contact me there.')"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" title="Instagram" onclick="alert('Sorry, My instagram is currently on deactivate mode. I am more active at Twitter and Linkedin. Contact me there.')"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/virtualabishek" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+                </ul>
+              </nav>
             </div>
+            <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="wave-bg"></div>
+</header>
+<div class="section pt-4 px-3 px-lg-4" id="about">
+  <div class="container-narrow">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="h4 my-2">Hello! I’m Abishek Neupane.</h2>
+        <p>Hey, you! I'm glad you're here. I'm Abishek Neupane, but I prefer to be called Virtual Abishek on the internet. I'm passionate about software design, and I have skills as a front-end developer, specializing in various programming languages and now stepping on back-end. Currently, I am pursuing my bachelor's degree in Information Technology (IT). Meanwhile, I am busy taking as many courses as possible through online learning platforms like Coursera, CS50, etc. and working on numerous projects.</p>
+        <div class="row mt-3">
+          <div class="col-sm-2">
+            <div class="pb-1">Age:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">21</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Email:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">contact@abishekn.com.np</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Twitter: </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">virtualabishek</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Phone:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">+977-9862681874</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Address:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">Nepal</div>
+          </div>
+          <div class="col-sm-2">
+          <div class="pb-1">Details:</div>
+          </div>
+          <div class="col-sm-5">
+            <div class="pb-1 fw-bolder"><a href="cv.pdf" download><button style="padding: 5px 10px;
+              font-size: 14px;
+              background-color: #007bff;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              border-radius: 6px;
+              text-decoration: none;">Download CV</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/avatar.png" width="400" height="400" alt="Abishek Neupane"/></div>
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="quotes">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Personal Reflection</h2>
+      <br>
+      <br>
+      <div class="text-center">
+        <p class="mx-auto mb-3" style="max-width:600px">I try to share my personal reflections here daily.</p>
+      </div>
+      <div class="text-center">
+        <a href="quote.html" class="mquote-link" target="_blank">
+          <div class="mquote-box w-100 p-3 mb-3" style="border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
+            <p class="mquote-text mb-1" style="font-size: 1.2rem; font-style: italic;">"Sometimes life gives you people who are like water from a river. It feels nice and fresh to cup them in your palms for a moment, but ultimately, the fate of water is that you have to let it go back to the river. And that's the beauty of the experience."</p>
+            <p class="mquote-date text-muted mb-0" style="font-size: 0.9rem;">- July 22, 2024</p>
+        </div>        
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="services">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">My Services</h2>
+    </div>
+    <div class="text-center">
+      <p class="mx-auto mb-3" style="max-width:600px">I provide efficient and timely services for websites and apps, ensuring quick delivery and effective solutions.</p>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2" src="images/services/web-design.svg" width="96" height="96" alt="web design"/>
+        <div class="h5">Web Design</div>
+      </div>
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2" src="images/services/graphic-design.svg" width="96" height="96" alt="graphic design"/>
+        <div class="h5">Graphic Design</div>
+      </div>
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2" src="images/services/ui-ux.svg" width="96" height="96" alt="ui-ux"/>
+        <div class="h5">UI/UX</div>
+      </div>
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2" src="images/services/app-development.svg" width="96" height="96" alt="app development"/>
+        <div class="h5">App Development</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="skills">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">My Skills</h2>
+    </div>
+    <div class="text-center">
+      <p class="mx-auto mb-3" style="max-width:600px">I have a strong passion for web application development and product design. With a focus on continuous learning, I specialize in a wide range of skills in these areas.</p>
+    </div>
+    <div class="bg-light p-3">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>95%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">CSS3</span><span>95%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">JavaScript</span><span>80%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">C</span><span>95%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">C++</span><span>70%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">WordPress</span><span>85%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">MySQL</span><span>80%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Python</span><span>60%</span></div>
+            <div class="progress my-1">
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section px-2 px-lg-4 pt-5" id="portfolio">
+  <!--
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Portfolio </h2>
+      <p class="mx-auto mb-3" style="max-width:700px"><br><br>Versatile expertise in web development and product design. Committed to continuous learning and proficient in various skills essential for building captivating portfolios.</p>
+    </div>
+    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="grid-sizer"></div>
+      <div class="grid-item"><a href="https://dribbble.com">
+          <figure class="portfolio-item"><img src="images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">Web Design</h4>
+              <div>Dribbble.com</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://github.com">
+          <figure class="portfolio-item"><img src="images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption."/>
+            <figcaption> 
+              <h4 class="h5 mb-0">Web Development</h4>
+              <div>GitHub.com</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://soundcloud.com/">
+          <figure class="portfolio-item"><img src="images/portfolio/3-small.png" data-bp="images/portfolio/3.jpg" data-caption="Example of an optional caption."/>
+            <figcaption> 
+              <h4 class="h5 mb-0">Audio Mixing</h4>
+              <div>Soundcloud.com</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://www.adobe.com/">
+          <figure class="portfolio-item"><img src="images/portfolio/4-small.png" data-bp="images/portfolio/4.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">Video Editing</h4>
+              <div>Adobe After Effects</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://www.adobe.com/">
+          <figure class="portfolio-item"><img src="images/portfolio/5-small.png" data-bp="images/portfolio/5.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">Photography</h4>
+              <div>Adobe Photoshop</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://www.android.com/">
+          <figure class="portfolio-item"><img src="images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">App Development</h4>
+              <div>Android</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://flutter.dev/">
+          <figure class="portfolio-item"><img src="images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">App Design</h4>
+              <div>Flutter</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://flutter.dev/">
+          <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">App Development</h4>
+              <div>Flutter</div>
+            </figcaption>
+          </figure></a></div>
+    </div>
+  </div>
+-->
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Set the start date of the project (Nepal Time: 2023/8/15 at 3:12 PM)
-            const startDate = new Date("2024-08-15T15:12:00+05:45").getTime();
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="experience">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Experience</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">UI/UX Design</h3>
+                <div class="text-muted text-small">Upwork<small>(2020-present)</small></div>
+              </div><img src="images/services/ui-ux.svg" width="48" height="48" alt="ui-ux"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>I work as a freelance UI/UX designer, creating designs that focus on user experience. I have experience working with different clients and adapt to their unique requirements. </p>
+            <p> I stay updated with the latest trends to deliver cutting-edge designs. Let's work together.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">App Development</h3>
+                <div class="text-muted text-small">Freelancing <small>(2023-present)</small></div>
+              </div><img src="images/services/app-development.svg" width="48" height="48" alt="app development"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p> I am specialized in differnet methodologies, user-centric design, and creating unique app experiences. With a focus on innovation, I collaborate closely with clients to meet their goals.</p>
+            <p>Let's work together to turn your app ideas into reality and create engaging experiences for your users.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">Web Design</h3>
+                <div class="text-muted text-small">Freelancing <small>(2018-present)</small></div>
+              </div><img src="images/services/web-design.svg" width="48" height="48" alt="web design"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>As a freelance web designer, I create visually appealing and user-friendly websites. With a focus on modern design trends and user experience, I collaborate with clients to bring their vision.</p>
+            <p>Let's work together to create a web design online that engages and delights your audience.</p>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">Full Stack Development</h3>
+                <div class="text-muted text-small">Freelancing<small>(2020 - 2021)</small></div>
+              </div><img src="images/services/full-stack.svg" width="48" height="48" alt="full stack"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>Aspiring Full Stack Developer, currently building a strong foundation in front-end and back-end technologies. Passionate about learning and staying up-to-date with the latest industry trends that provide seamless user experiences. </p>
+            <p>Let's embark on this journey together to create innovative and impactful solutions.</p>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+<!-- Testinomials begin : copy right @ virtual abishek-->
+<div class="section px-3 px-lg-4 pt-5" id="testimonials">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Client Testimonials</h2>
+    </div>
+  </div>
+  <div class="text-center">
+    <p class="mx-auto mb-3" style="max-width:600px"> <span class= "pb-1 fw-bolder">Thank's! </span></span> Here are the some  reviews i got. This are extracted from my LinkedIn Profile and my email. </p>
+  </div>
+    <div class="row"> 
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">I highly recommend Abishek Neupane for his exceptional contributions to my project. His expertise in web development has been instrumental in delivering outstanding results. He consistently demonstrates a strong understanding of programming languages and frameworks, coupled with a keen eye for detail and problem-solving skills. He effectively collaborates with the team, communicates ideas clearly, and meets deadlines with efficiency. His dedication and professionalism make him an invaluable asset to any project. It's been a pleasure working with him, and I look forward to future collaborations.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Prakash Upadhyaya</div>
+            <div class="text-small">Digital Marketer</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Abishek help me to get knowledge about programming. He counselled everything related to IT field. He taught me from basic level . I am thankful to Abishek. Because of Abishek I came to know about advantages programming of which is helpful for my study further. </span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Mukti Chaudhary</div>
+            <div class="text-small">Web Devloper</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">I have had the pleasure of working closely with Abishek Neupane in the realm of web development, and I cannot recommend him highly enough. Abishek is not just a colleague; he's a friend whose dedication and expertise have consistently impressed me.
 
-            // Update the countdown every 1 second
-            const countdownFunction = setInterval(function() {
-                const now = new Date().getTime();
-                const elapsed = now - startDate;
+          In our collaboration, Abishek showcased a remarkable talent for problem-solving and an unwavering commitment to delivering top-notch results. His proficiency in web development is evident in his ability to navigate complex technical challenges with ease, always striving for innovative solutions that exceed expectations.
+          
+          Beyond his technical prowess, Abishek's passion for continuous learning and improvement is truly inspiring. He stays abreast of the latest industry trends and technologies, consistently seeking out opportunities to enhance his skills and knowledge.
+                  <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Kelechi Coding</div>
+            <div class="text-small"> Developer</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <!--
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">He is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Braiden</div>
+            <div class="text-small">Web Designer</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div> 
+<!-- Testinomials end : copy right @ virtual abishek-->
 
-                // Time calculations for days, hours, minutes, and seconds
-                const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+<!--Certificates-->
+<div class="section px-2 px-lg-4 pt-5" id="portfolio">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Certificates</h2>
+      <p class="mx-auto mb-3" style="max-width:700px"><br><br>I'm committed to daily online courses, continuously improving my skills. Here are my certificates. I am still learning many more.</p>
+    </div>
+    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="grid-sizer"></div>
+      <div class="grid-item"><a href="https://coursera.org/verify/SFBUCNXPJAS6">
+        <figure class="portfolio-item"><img src="images/certificates/frontend.jpg" data-bp="images/certificates/frontend.jpg"/>
+          <figcaption>
+            <h4 class="h5 mb-0">Meta-Frontend Devlopment</h4>
+            <div>Meta & Coursera</div>
+          </figcaption>
+        </figure></a></div>
+      <div class="grid-item"><a href="https://coursera.org/verify/ZAB4RR5NPKX5">
+          <figure class="portfolio-item"><img src="images/certificates/javascript.jpg" data-bp="images/certificates/javascript.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0"> Meta - JavaScript</h4>
+              <div>Meta & Coursera</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://coursera.org/verify/EEN4FND832ZB">
+          <figure class="portfolio-item"><img src="images/certificates/google-1.jpg" data-bp="images/certificates/google-1.jpg" data-caption="Google-UX-2-Start the UX Design Process: Empathize, Define"/>
+            <figcaption> 
+              <h4 class="h5 mb-0">UX Design -1 </h4>
+              <div>coursera.com</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://coursera.org/verify/ADZ8ZMVWECAK">
+          <figure class="portfolio-item"><img src="images/certificates/google-2.jpg" data-bp="images/certificates/google-2.jpg" data-caption="Google-UX-1-Foundations of User Experience (UX) Design"/>
+            <figcaption> 
+              <h4 class="h5 mb-0">UX Design -2</h4>
+              <div>coursera.com</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://coursera.org/verify/RKLWKGYGUHRF">
+          <figure class="portfolio-item"><img src="images/certificates/version.jpg" data-bp="images/certificates/version.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">Version Control</h4>
+              <div>Meta</div>
+            </figcaption>
+          </figure></a></div>
+          
+      <div class="grid-item"><a href="https://www.coursera.org/">
+          <figure class="portfolio-item"><img src="images/certificates/build.jpg" data-bp="images/certificates/build.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">UX Design</h4>
+              <div>Google</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://coursera/">
+          <figure class="portfolio-item"><img src="images/certificates/conduct.jpg" data-bp="images/certificates/conduct.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">UX Design</h4>
+              <div>Google</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://sololearn.com/">
+          <figure class="portfolio-item"><img src="images/certificates/solo-2.jpg" data-bp="images/certificates/solo-2.jpg"/>
+            <figcaption>
+              <h4 class="h5 mb-0">C Programming</h4>
+              <div>sololearn</div>
+            </figcaption>
+          </figure></a></div>
+    </div>
+  </div>
+</div>
+<div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Contact Me</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/f/mleydddq"
+    method="POST">
+    <div class="form-group my-2">
+      <label for="name" class="form-label fw-bolder">Name</label>
+      <input class="form-control" type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group my-2">
+      <label for="email" class="form-label fw-bolder">Email</label>
+      <input class="form-control" type="email" id="email" name="_replyto" required>
+    </div>
+  <div class="form-group my-2">
+    <label for="message" class="form-label fw-bolder">Message</label>
+    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
+  </div>
+  <button class="btn btn-primary mt-2" type="submit">Send</button>
+</form>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="mt-3 px-1">
+          <div class="h5">Let’s talk how I can help you!</div>
+          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
+          <p>Or get in touch using my email, telegram or my contact number.</p>
+          <p>See you!</p>
+        </div>
+        <div class="mt-53 px-1">
+          <div class="row"> 
+            <div class="col-sm-2">
+              <div class="pb-1 ">Email:</div>
+            </div>
+            <div class="col-sm-10">
+              <div class="pb-1 fw-bolder">contact@abishekn.com.np</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="pb-1 ">Telegram: </div>
+            </div>
+            <div class="col-sm-10">
+              <div class="pb-1 fw-bolder">virtualabishek</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="pb-1">Phone:</div>
+            </div>
+            <div class="col-sm-10">
+              <div class="pb-1 fw-bolder">+977-9862681874</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="pt-4 pb-4 text-center bg-light">
+  <div class="container">
+    <div class="my-3">
+      <div class="h4">Abishek Neupane</div>
+      <p>Devloper & Learner</p>
+      <div class="social-nav">
+        <nav role="navigation">
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/virtualabishek" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" title="Facebook" onclick="alert('Sorry, My facebook is currently on deactivate mode. I am more active at Twitter and Linkedin. Contact me there.')"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" title="Instagram" onclick="alert('Sorry, My instagram is currently on deactivate mode. I am more active at Twitter and Linkedin. Contact me there.')"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/virtualabishek" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+          </ul>
+          
 
-                // Display the result in the elements with corresponding ids
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;
-            }, 1000);
-        });
-    </script>
-</body>
+        </nav>
+      </div>
+    </div>
+    <div class="text-small text-secondary">
+      <div class="mb-1">&copy; Abishek Neupane. All rights reserved.</div>
+      <div>
+        Devloped by - <a href="https://abishekn.com.np/" target="_blank">Abishek Neupane</a></div>
+    </div>
+  </div>
+</footer></div>
+    </div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>    
+    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+    <script src="./scripts/main.js?ver=1.2.0"></script>
+  </body>
 </html>
-<!-- Currently working on new Protfolio using react. The old protfolio is being removed from this
- domain.You can find by my github repo. -->
+<!-- Don't see my code  LOL-->
+
