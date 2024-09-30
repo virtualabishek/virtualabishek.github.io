@@ -96,7 +96,12 @@
 
 const quotes = [
   {
-    text: "Hell is still hell, no matter how much freedom it offers.",
+    text: `"Overflow and underflow both exist. When there was no rain, everyone prayed for it. Now that it's raining, everyone wants it to stop. Overflow lowers the value, and underflow increases it, but both affect life. So, it's important to find a balance between the two."`,
+    date: "September 30, 2024",
+  },
+
+  {
+    text: `"Hell is still hell, no matter how much freedom it offers."`,
     date: "November 29, 2024",
   },
   {
@@ -119,10 +124,7 @@ const quotes = [
     text: `"If you’re thinking about what others are thinking by yourself, then what will they think about?"`,
     date: "July 19, 2024",
   },
-  /*
-  
-  {text: "", date: "July 2, 2024"},
-  {text: "", date: "July 2, 2024"},
+  /*  {text: "", date: "July 2, 2024"},
   {text: "", date: "July 2, 2024"},
   {text: "", date: "July 2, 2024"},
   {text: "", date: "July 2, 2024"},
