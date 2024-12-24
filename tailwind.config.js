@@ -16,14 +16,15 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: "var(--font-sans)",
-        serif: "var(--font-serif)",
+        sans: ['"Inter"', "sans-serif"],
+        serif: ['"Calistoga"', "serif"],
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
         "move-left": "move-left 10s linear infinite",
         "move-right": "move-right 10s linear infinite",
       },
+
       keyframes: {
         "ping-large": {
           "75%, 100%": {
@@ -51,4 +52,5 @@ export default {
     },
   },
   plugins: [],
+  safelist: [],
 };
