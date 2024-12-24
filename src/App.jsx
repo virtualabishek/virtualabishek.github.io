@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import { twMerge } from "tailwind-merge";
 import "@fontsource/inter";
 import "@fontsource/calistoga";
+import Project from "./pages/Project.jsx";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -19,6 +20,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Project />} />
       </Routes>
       <Footer />
     </div>

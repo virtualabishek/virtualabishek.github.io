@@ -1,13 +1,18 @@
 import React from "react";
 import memojiImage from "../assets/images/memoji-computer.png";
-import arrowDown from "../assets/icons/arrow-down.svg";
+// import arrowDown from "../assets/icons/arrow-down.svg";
+// aaileko lagi manual use gareko, yeslai ni component banayara garna parne huna le
 import grainImage from "../assets/images/grain.jpg";
 import StarIcon from "../components/svgComponents/StarIcon";
 import SparkleIcon from "../components/svgComponents/SparkleIcon";
 import HeroOrbit from "../components/extra/HeroOrbit";
+import { NavLink } from "react-router-dom";
 const HeroSection = () => {
   return (
-    <main className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <main
+      id="#hero"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
       <div
         className="absolute inset-0 [mask-image:linear-gradient(to_bottom, transparent,
        black_10%, black_70%, transparent)]"
@@ -38,7 +43,7 @@ const HeroSection = () => {
           orbitDuration="32s"
           spinDuration="3s"
         >
-          <SparkleIcon classname="size-5 text-emerald-300/20" />
+          <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit
           size={520}
@@ -131,7 +136,29 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="max-w-lg mx-auto">
-        <h1 className=""></h1>
+        <h1 className="font-serif text-3xl md:text-5xl text-center my-8 tracking-wide">
+          Designing & Building Web Applications
+        </h1>
+        <p className="mt-4 text-center text-white/60 md:text-lg">
+          I am a web developer who strives to learn new skills every day. I love
+          to create high-performing, functional, and logical web applications.
+          Let&apos;s discuss your next project!
+        </p>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <NavLink
+          to="/projects"
+          className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
+        >
+          <span className="font-semibold">Explore My Work ⬇️</span>
+        </NavLink>
+        <a
+          href="#contact"
+          className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
+        >
+          <span>👋</span>
+          <span>Let&apos;s Connect</span>
+        </a>
       </div>
     </main>
   );

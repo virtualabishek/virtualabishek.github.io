@@ -1,13 +1,14 @@
 import { nav } from "framer-motion/client";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="flex justify-center items-center fixed top-3 w-full z-10">
       <div className="flex gap-1 p-0.5 border-white/15 border bg-white/10 backdrop-blur rounded-full">
-        <a href="#" className="nav-item">
+        <NavLink to="/" className="nav-item">
           Home
-        </a>
+        </NavLink>
         <a href="#projects" className="nav-item">
           Projects
         </a>
