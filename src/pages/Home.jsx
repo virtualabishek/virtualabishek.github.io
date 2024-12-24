@@ -1,17 +1,23 @@
+import { main } from "framer-motion/client";
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-import Projects from "../components/Projects";
+
+import HeroSection from "../sections/HeroSection";
+import ProjectsSection from "../sections/ProjectsSection";
+import TapeSection from "../sections/TapeSection";
+import TestimonialsSection from "../sections/TestimonialsSection";
+import AboutSection from "../sections/AboutSection";
+import ContactSection from "../sections/ContactSection";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <HeroSection />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+      <ProjectsSection />
+      <TapeSection />
+      <TestimonialsSection />
+      <AboutSection />
+      <ContactSection />
+    </main>
   );
 };
 
