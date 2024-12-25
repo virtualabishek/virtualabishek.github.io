@@ -2,6 +2,7 @@ import { image, main, section, title } from "framer-motion/client";
 import React from "react";
 import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
+import brotherProtfolio from "../assets/images/brotherProtfolio.png";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
@@ -34,6 +35,19 @@ const protfolioProjects = [
     repo: "https://github.com/virtualabishek/rojgar-sabailai",
     image: rojgarSabailai,
   },
+  // {
+  //   name: "Brother Protfolio",
+  //   year: 2022,
+  //   title: "Simple Portfolio Website",
+  //   results: [
+  //     { title: "Created a responsive UI/UX" },
+  //     { title: "A Neat & Clean Design" },
+  //     { title: "Multipage Website" },
+  //   ],
+  //   link: "https://www.neupaneabinash.com",
+  //   repo: "https://github.com/virtualabishek/brotherProtfolio",
+  //   image: brotherProtfolio,
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -80,7 +94,7 @@ const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a
-                    href={project.link} // Fixed link to use actual value
+                    href={project.link}
                     className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
                   >
                     <span>Visit Live Site</span>
@@ -91,7 +105,7 @@ const ProjectsSection = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:mb-0 lg:mt-0 lg:h-full lg:w-full lg:max-w-none object-cover object-top-left"
+                    className="mt-8 -mb-4 md:mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
               </div>
