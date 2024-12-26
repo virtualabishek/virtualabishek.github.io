@@ -11,6 +11,8 @@ import ChromeIcon from "../components/svgComponents/Chrome";
 import GithubIcon from "../components/svgComponents/Github";
 import ToolBoxItems from "../components/extra/ToolBoxItems";
 import { motion } from "framer-motion";
+import CityImage from "../assets/images/City.png";
+import smileEmoji from "../assets/images/memoji-smile.png";
 
 const toolboxItems = [
   { title: "Javascript", iconType: JavascriptIcon },
@@ -80,8 +82,7 @@ const AboutSection = () => {
                 }
                 className="p-6"
               />
-              <div className="relative flex-1 ref = {constraintRef}">
-                {/* mathi ko lai mapping garna paryo */}
+              <div className="relative flex-1 ref={constraintRef}">
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
@@ -93,11 +94,22 @@ const AboutSection = () => {
                     <span className="font-medium text-gray-950">
                       {hobby.title}
                     </span>
+                    <span>{hobby.emoji}</span>
                   </motion.div>
                 ))}
               </div>
             </Card>
-            <Card className=""></Card>
+            <Card className="h-[320px] p-0 relative mod:col-span-2 lg:col-span-1">
+              <img
+                src={CityImage}
+                alt="Sirjana Chock, Chitwan"
+                className="size-full object-cover object-left-top"
+              />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:ring-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute inset-0 rounded-full -z-10 bg-gradient-to-r from-emerald-300 to-sky-400 animate-ping [animation-duration:2s]"></div>
+                <img src={smileEmoji} alt="HAHA" className="size-20" />
+              </div>
+            </Card>
           </div>
         </div>
         <div></div>
