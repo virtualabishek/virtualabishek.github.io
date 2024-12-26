@@ -49,7 +49,7 @@ const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1 mb-8 md:mb-0">
               <CardHeader
                 title="My Reads"
-                description="Explore Book I am reading nowadays."
+                description="Take a look at the book I'm currently reading."
               />
               <div className="w-40 mx-auto mt-2">
                 <img src={bookImage} alt="Jeevan Kada Ki Ful" />
