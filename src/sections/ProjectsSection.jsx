@@ -55,7 +55,7 @@ const ProjectsSection = () => {
     <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <SectionHeader
-          icon={"Real World Projects"}
+          info={"Real World Projects"}
           title={"Featured Projects"}
           description={
             "Here are some of the projects that I have worked on to build my skills."
