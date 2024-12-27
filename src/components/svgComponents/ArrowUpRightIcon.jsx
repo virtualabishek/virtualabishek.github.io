@@ -1,6 +1,4 @@
-import React from "react";
-
-const ArrowUpRightIcon = (props) => (
+const ArrowUpRightIcon = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -11,7 +9,7 @@ const ArrowUpRightIcon = (props) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-arrow-up-right"
+    className={`feather feather-arrow-up-right ${className}`}
     {...props}
   >
     <line x1="7" y1="17" x2="17" y2="7"></line>

@@ -16,8 +16,8 @@ const ContactSection = () => {
               Let&apos;s create something amazing together.
             </h2>
             <p className="text-sm md:text-base my-2">
-              Ready to bring your next project to life? Let&apos;s connect and
-              discuss how I can help you achieve goals.
+              I want to work on more projects and explore new ideas. Let&apos;s
+              connect, discuss, and collaborate on projects if you have any!
             </p>
           </div>
           <a
