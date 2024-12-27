@@ -137,7 +137,7 @@ const HeroSection = () => {
       </div>
       <div className="max-w-lg mx-auto">
         <h1 className="font-serif text-3xl md:text-5xl text-center my-8 tracking-wide">
-          Designing & Building Web Applications
+          I&apos;m Abishek Neupane
         </h1>
         <p className="mt-4 text-center text-white/60 md:text-lg">
           I am a web developer who strives to learn new skills every day. I love
@@ -151,6 +151,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
         >
           <span className="font-semibold">Explore My Work ⬇️</span>
+          {/* yaha ajai launa parcha  */}
         </NavLink>
         <a
           href="#contact"

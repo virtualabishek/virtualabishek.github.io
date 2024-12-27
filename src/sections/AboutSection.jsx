@@ -13,6 +13,7 @@ import ToolBoxItems from "../components/extra/ToolBoxItems";
 import { motion } from "framer-motion";
 import CityImage from "../assets/images/City.png";
 import smileEmoji from "../assets/images/memoji-smile.png";
+// yaha color milauna cha, svg components ko. js, react, html, yati ko
 
 const toolboxItems = [
   { title: "Javascript", iconType: JavascriptIcon },
@@ -37,7 +38,7 @@ const AboutSection = () => {
   const constraintRef = useRef(null);
 
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           info="About Me"
