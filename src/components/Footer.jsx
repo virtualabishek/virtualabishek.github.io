@@ -1,6 +1,6 @@
 import React from "react";
 import ArrowUpRightIcon from "./svgComponents/ArrowUpRightIcon";
-// dherai imp
+// dherai improve garna chai footer chai.
 const footerLinks = [
   { title: "Github", href: "https://github.com/virtualabishek" },
   { title: "Twitter", href: "https://x.com/virtualabishek" },
