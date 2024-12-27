@@ -69,7 +69,7 @@ const AboutSection = () => {
               <ToolBoxItems
                 items={toolboxItems}
                 className="mt-6"
-                itemWrapperClassName="animate-move-left [animate-duration-30s]"
+                itemWrapperClassName="animate-move-right [animate-duration-30s]"
               />
             </Card>
           </div>
@@ -112,7 +112,6 @@ const AboutSection = () => {
             </Card>
           </div>
         </div>
-        <div></div>
       </div>
     </div>
   );
