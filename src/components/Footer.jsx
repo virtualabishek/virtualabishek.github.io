@@ -5,8 +5,8 @@ const footerLinks = [
   { title: "Github", href: "https://github.com/virtualabishek" },
   { title: "Twitter", href: "https://x.com/virtualabishek" },
   {
-    title: "Website",
-    href: "https://www.abishekn.com.np",
+    title: "Check Upcomming Update On This Site",
+    href: "https://www.notion.so/Upcoming-Updates-on-Portfolio-Website-1699523fa72e804fb58fe07c67dc03b5?",
   },
   { title: "LinkedIn", href: "https://www.linkedin.com/in/virtualabishek/" },
 ];
