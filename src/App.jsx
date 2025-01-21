@@ -1,3 +1,4 @@
+import React from "react";
 import Home from "./pages/Home.jsx";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,8 +8,6 @@ import "@fontsource/calistoga";
 import Project from "./pages/Project.jsx";
 
 import { Route, Routes } from "react-router-dom";
-
-import React from "react";
 
 const App = () => {
   const dynamicClasses = twMerge(
@@ -20,8 +19,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* Yo paxi ali dherai projects vayasi rakhum, ani sabai project lai json ma rakhum */}
         <Route path="/projects" element={<Project />} />
       </Routes>
+
       <Footer />
     </div>
   );

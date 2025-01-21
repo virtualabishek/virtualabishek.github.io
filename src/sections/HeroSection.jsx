@@ -1,16 +1,18 @@
 import React from "react";
 import memojiImage from "../assets/images/memoji-computer.png";
-// import arrowDown from "../assets/icons/arrow-down.svg";
-// aaileko lagi manual use gareko, yeslai ni component banayara garna parne huna le
+import arrowDownIcon from "../components/svgComponents/ArrowDownIcon";
 import grainImage from "../assets/images/grain.jpg";
 import StarIcon from "../components/svgComponents/StarIcon";
 import SparkleIcon from "../components/svgComponents/SparkleIcon";
 import HeroOrbit from "../components/extra/HeroOrbit";
 import { NavLink } from "react-router-dom";
+import ArrowDownIcon from "../components/svgComponents/ArrowDownIcon";
+import { HashLink } from "react-router-hash-link";
+
 const HeroSection = () => {
   return (
     <main
-      id="#hero"
+      id="home"
       className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
     >
       <div
@@ -146,13 +148,13 @@ const HeroSection = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <NavLink
+        <HashLink
           to="/projects"
           className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
         >
-          <span className="font-semibold">Explore My Work ⬇️</span>
-          {/* yaha ajai launa parcha  */}
-        </NavLink>
+          <span className="font-semibold">Explore My Work</span>
+          <ArrowDownIcon className="size-4" />
+        </HashLink>
         <a
           href="#contact"
           className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"

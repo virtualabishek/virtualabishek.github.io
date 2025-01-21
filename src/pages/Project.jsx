@@ -32,7 +32,7 @@ const protfolioProjects = [
       { title: "Filter of a relative job" },
     ],
     link: "https://rojgarsabailai.netlify.com",
-    repo: "https://github.com/virtualabishek/rojgar-sabailai",
+    repo: "https://github.com/virtualabishek/Hackathon-Project/tree/master/api-v1-master%20-%20Finall%20with%20backend/api-v1-master",
     image: rojgarSabailai,
   },
   // {
@@ -93,13 +93,26 @@ const Project = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={project.link}
-                    className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
-                  >
-                    <span>Visit Live Site</span>
-                    <ArrowUpRightIcon className="size-4" />
-                  </a>
+                  <div className="md:flex gap-2">
+                    <div>
+                      <a
+                        href={project.link}
+                        className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                      >
+                        <span>Visit Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href={project.repo}
+                        className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                      >
+                        <span>Visit Repo </span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="relative lg:h-full">
                   <img

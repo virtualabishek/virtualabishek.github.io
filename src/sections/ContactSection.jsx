@@ -4,7 +4,7 @@ import ArrowUpRightIcon from "../components/svgComponents/ArrowUpRightIcon";
 
 const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <div id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
         <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0 md:flex md:justify-between items-center md:gap-8">
           <div
