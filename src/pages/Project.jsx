@@ -1,54 +1,23 @@
 import { image, main, section, title } from "framer-motion/client";
 import React from "react";
+import { projects } from "../assets/json/project.json";
 import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
+import brotherProtfolio from "../assets/images/brotherProtfolio.png";
+import collegeCover from "../assets/images/collegeCover.png";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
 import ArrowUpRightIcon from "../components/svgComponents/ArrowUpRightIcon";
 // Project List
 // yaha dherai rakhna pacrha.
-const protfolioProjects = [
-  {
-    name: "nepDoc",
-    year: 2024,
-    title: "A Doctor Appointment Web App",
-    results: [
-      { title: "A Smooth & Functional UI/UX" },
-      { title: "All the details about Doctors" },
-      { title: "Can Logged In & Book Appointments" },
-    ],
-    link: "https://nep-doc.vercel.app",
-    repo: "https://github.com/virtualabishek/nepDoc",
-    image: nepDoc,
-  },
-  {
-    name: "Rojgar Sabailai",
-    year: 2023,
-    title: "RS - Online Job Portal",
-    results: [
-      { title: "Created a responsive UI/UX" },
-      { title: "User can apply and post the job" },
-      { title: "Filter of a relative job" },
-    ],
-    link: "https://rojgarsabailai.netlify.com",
-    repo: "https://github.com/virtualabishek/Hackathon-Project/tree/master/api-v1-master%20-%20Finall%20with%20backend/api-v1-master",
-    image: rojgarSabailai,
-  },
-  // {
-  //   name: "Brother Protfolio",
-  //   year: 2022,
-  //   title: "Simple Portfolio Website",
-  //   results: [
-  //     { title: "Created a responsive UI/UX" },
-  //     { title: "A Neat & Clean Design" },
-  //     { title: "Multipage Website" },
-  //   ],
-  //   link: "https://www.neupaneabinash.com",
-  //   repo: "https://github.com/virtualabishek/brotherProtfolio",
-  //   image: brotherProtfolio,
-  // },
-];
+
+const imageMap = {
+  nepDoc,
+  rojgarSabailai,
+  brotherProtfolio,
+  collegeCover,
+};
 
 const Project = () => {
   return (
@@ -63,7 +32,7 @@ const Project = () => {
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {/* Aba Project lai map garna paryo. */}
-          {protfolioProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <Card
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
@@ -116,7 +85,7 @@ const Project = () => {
                 </div>
                 <div className="relative lg:h-full">
                   <img
-                    src={project.image}
+                    src={imageMap[project.imageName]} // Changed from project.image to project.imageName
                     alt={project.title}
                     className="mt-8 -mb-4 md:mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />

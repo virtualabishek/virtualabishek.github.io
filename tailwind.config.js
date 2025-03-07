@@ -19,6 +19,7 @@ export default {
         sans: ['"Inter"', "sans-serif"],
         serif: ['"Calistoga"', "serif"],
       },
+
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
         "move-left": "move-left 10s linear infinite",
@@ -48,6 +49,15 @@ export default {
             transform: "translateX(0%)",
           },
         },
+      },
+      transitionProperty: {
+        all: "all",
+      },
+      transitionDuration: {
+        300: "300ms",
+      },
+      backdropBlur: {
+        sm: "4px",
       },
     },
   },
