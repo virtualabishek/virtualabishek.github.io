@@ -9,6 +9,9 @@ const Navbar = () => {
         <HashLink to="/#home" className="nav-item">
           Home
         </HashLink>
+        <HashLink to="/perspective" className="nav-item">
+          Perspective
+        </HashLink>
         <HashLink to="/#projects" className="nav-item">
           Projects
         </HashLink>
