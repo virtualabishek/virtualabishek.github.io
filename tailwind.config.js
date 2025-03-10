@@ -59,27 +59,8 @@ export default {
       backdropBlur: {
         sm: "4px",
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: "#fff",
-            a: {
-              color: "#38bdf8",
-              "&:hover": {
-                color: "#7dd3fc",
-              },
-            },
-            "code::before": {
-              content: '""',
-            },
-            "code::after": {
-              content: '""',
-            },
-          },
-        },
-      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
   safelist: [],
 };

@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docusaurus": "docusaurus",
+    "start-blog": "docusaurus start --port 3001",
+    "build-blog": "docusaurus build",
+    "serve-blog": "docusaurus serve"
   },
   "dependencies": {
     "@fontsource/calistoga": "^5.1.0",
@@ -16,11 +19,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/typography": "^0.5.16",
     "framer-motion": "^11.3.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-markdown": "^10.1.0",
     "react-router-dom": "^7.1.0",
     "react-router-hash-link": "^2.4.3",
     "remark-gfm": "^4.0.1",

@@ -15,9 +15,9 @@ const Navbar = () => {
         <HashLink to="/#projects" className="nav-item">
           Projects
         </HashLink>
-        <HashLink to="/#about" className="nav-item">
+        {/* <HashLink to="/#about" className="nav-item">
           About
-        </HashLink>
+        </HashLink> */}
         <HashLink
           to="/#contact"
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
