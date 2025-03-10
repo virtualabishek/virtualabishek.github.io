@@ -6,18 +6,24 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docusaurus": "docusaurus",
+    "start-blog": "docusaurus start --port 3001",
+    "build-blog": "docusaurus build",
+    "serve-blog": "docusaurus serve"
   },
   "dependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
     "@fontsource/calistoga": "^5.1.0",
     "@fontsource/inter": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/typography": "^0.5.16",
+    "date-fns": "^4.1.0",
     "framer-motion": "^11.3.21",
+    "gray-matter": "^4.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",

@@ -7,7 +7,7 @@ import "@fontsource/inter";
 import "@fontsource/calistoga";
 import Project from "./pages/Project.jsx";
 import Perspective from "./pages/Perspective.jsx";
-import BlogPage from "./pages/BlogPage.jsx";
+import Blog from "./pages/Blog.jsx";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const App = () => {
         {/* Yo paxi ali dherai projects vayasi rakhum, ani sabai project lai json ma rakhum */}
         <Route path="/projects" element={<Project />} />
         <Route path="/perspective" element={<Perspective />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/*" element={<Blog />} />
       </Routes>
 
       <Footer />
