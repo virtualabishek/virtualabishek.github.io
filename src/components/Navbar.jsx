@@ -18,12 +18,12 @@ const Navbar = () => {
         {/* <HashLink to="/#about" className="nav-item">
           About
         </HashLink> */}
-        <HashLink
-          to="/#contact"
+        <a
+          href="https://blog.abishekn.com.np/"
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
         >
-          Contact
-        </HashLink>
+          Blog
+        </a>
       </div>
     </nav>
   );
