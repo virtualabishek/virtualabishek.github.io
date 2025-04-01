@@ -41,7 +41,7 @@ const Perspective = () => {
             >
               <div className="flex flex-col">
                 <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light mb-4">
-                  "{perspective.text}"
+                  &quot;{perspective.text}&quot;
                 </p>
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex self-end font-bold uppercase tracking-widest text-xs text-transparent bg-clip-text mt-2">
                   {formatDate(perspective.date)}
