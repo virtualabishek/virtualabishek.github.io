@@ -108,7 +108,7 @@ const ProjectsSection = () => {
                         href={project.repo}
                         className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
                       >
-                        <span>Repository</span>
+                        <span>Visit Repo </span>
                         <ArrowUpRightIcon className="size-4" />
                       </a>
                     </div>
