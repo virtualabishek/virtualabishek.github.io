@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CardHeader from "../components/extra/CardHeader";
@@ -10,18 +10,30 @@ import ReactIcon from "../components/svgComponents/ReactIcon";
 import ChromeIcon from "../components/svgComponents/Chrome";
 import GithubIcon from "../components/svgComponents/Github";
 import ToolBoxItems from "../components/extra/ToolBoxItems";
+import NodeIcon from "../components/svgComponents/NodeIcon";
+import TypeScriptIcon from "../components/svgComponents/TypeScriptIcon";
+import PostgreSQLIcon from "../components/svgComponents/PostgreSQLIcon";
+import MySQLIcon from "../components/svgComponents/MySQL";
+import NextJsIcon from "../components/svgComponents/NextJs";
 import { motion } from "framer-motion";
 import CityImage from "../assets/images/City.png";
 import smileEmoji from "../assets/images/memoji-smile.png";
+import { title } from "framer-motion/client";
+// import { title } from "framer-motion/client";
 // yaha color milauna cha, svg components ko. js, react, html, yati ko
 
 const toolboxItems = [
   { title: "Javascript", iconType: JavascriptIcon },
   { title: "HTML5", iconType: HTMLIcon },
+  { title: "PostGress", iconType: PostgreSQLIcon },
   { title: "CSS3", iconType: CssIcon },
   { title: "React", iconType: ReactIcon },
+  { title: "TypeScript", iconType: TypeScriptIcon },
+  { title: "MySQL", iconType: MySQLIcon },
   { title: "Chrome", iconType: ChromeIcon },
+  { title: "Next JS", iconType: NextJsIcon },
   { title: "Github", iconType: GithubIcon },
+  { title: "Node.js", iconType: NodeIcon },
 ];
 
 const hobbies = [

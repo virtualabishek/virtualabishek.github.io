@@ -1,8 +1,8 @@
-import { image, main, section, title } from "framer-motion/client";
-import React from "react";
+// import { image, main, section, title } from "framer-motion/client";
+// import React from "react";
 import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
-import brotherProtfolio from "../assets/images/brotherProtfolio.png";
+// import brotherProtfolio from "../assets/images/brotherProtfolio.png";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";

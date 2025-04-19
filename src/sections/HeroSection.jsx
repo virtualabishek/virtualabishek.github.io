@@ -1,11 +1,8 @@
-import React from "react";
 import memojiImage from "../assets/images/memoji-computer.png";
-import arrowDownIcon from "../components/svgComponents/ArrowDownIcon";
 import grainImage from "../assets/images/grain.jpg";
 import StarIcon from "../components/svgComponents/StarIcon";
 import SparkleIcon from "../components/svgComponents/SparkleIcon";
 import HeroOrbit from "../components/extra/HeroOrbit";
-import { NavLink } from "react-router-dom";
 import ArrowDownIcon from "../components/svgComponents/ArrowDownIcon";
 import { HashLink } from "react-router-hash-link";
 
@@ -142,9 +139,9 @@ const HeroSection = () => {
           I&apos;m Abishek Neupane
         </h1>
         <p className="mt-4 text-center text-white/60 md:text-lg">
-          I am a web developer who strives to learn new skills every day. I love
-          to create high-performing, functional, and logical web applications.
-          Let&apos;s discuss your next project!
+          I am a full-stack developer who strives to learn new skills every day.
+          I love to create high-performing, functional, and logical web
+          applications. Let&apos;s discuss your next project!
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

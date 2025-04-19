@@ -1,12 +1,16 @@
-import React from "react";
 import { Fragment } from "react";
 import StarIcon from "../components/svgComponents/StarIcon";
 
 const qualities = [
   "User Friendly",
   "Fast Performance",
+  "Backend Integration",
+  "Nice Codebase",
+  "API Integration",
+  "Modern Technologies",
   "Simple to Use",
-  "Easy to Maintain",
+  "AI Integration",
+  "Dynamic Pages",
   "Clear Navigation",
   "Responsive Design",
   "SEO Friendly",

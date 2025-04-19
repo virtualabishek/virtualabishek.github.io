@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import perspectiveData from "../assets/json/Perspective.json";
 import Card from "../components/extra/Card";
 import SectionHeader from "../components/extra/SectionHeader";
