@@ -9,7 +9,7 @@ const footerLinks = [
     href: "https://www.notion.so/Upcoming-Updates-on-Portfolio-Website-1699523fa72e804fb58fe07c67dc03b5?",
   },
   { title: "LinkedIn", href: "https://www.linkedin.com/in/virtualabishek/" },
-  { title: "Blog", href: "https://blogs/abishekn.com.np/" },
+  { title: "Blog", href: "https://blogs.abishekn.com.np/" },
 ];
 
 const Footer = () => {
