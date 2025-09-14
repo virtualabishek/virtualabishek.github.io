@@ -1,14 +1,39 @@
-// import { image, main, section, title } from "framer-motion/client";
-// import React from "react";
 import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
-// import brotherProtfolio from "../assets/images/brotherProtfolio.png";
+import wishPix from "../assets/images/wishpix.png";
+import nationPortal from "../assets/images/4np.png";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
 import ArrowUpRightIcon from "../components/svgComponents/ArrowUpRightIcon";
-// Project List
+import { toast } from "react-hot-toast";
+
 const protfolioProjects = [
+  {
+    name: "WishPix",
+    year: 2025,
+    title: "Responsive WebApp for Graphic Desigining Company",
+    results: [
+      { title: "A Smooth & Functional UI/UX" },
+      { title: "Created the multiple pages to show the company" },
+      { title: "Project done on next.js for both frontend and backend" },
+    ],
+    link: "https://wishpix.agency",
+    image: wishPix,
+  },
+  {
+    name: "Brother Protfolio",
+    year: 2022,
+    title: "4Nation Chitwan Consuntancy Portal App",
+    results: [
+      { title: "Worked with both frontend and backend" },
+      { title: "Created the api using node.js and prisma ORM" },
+      { title: "Admin can verify the form and record the student Data" },
+    ],
+    link: "https://4nationschitwan.com",
+
+    image: nationPortal,
+  },
   {
     name: "nepDoc",
     year: 2024,
@@ -35,19 +60,6 @@ const protfolioProjects = [
     repo: "https://github.com/virtualabishek/Hackathon-Project/tree/master/api-v1-master%20-%20Finall%20with%20backend/api-v1-master",
     image: rojgarSabailai,
   },
-  // {
-  //   name: "Brother Protfolio",
-  //   year: 2022,
-  //   title: "Simple Portfolio Website",
-  //   results: [
-  //     { title: "Created a responsive UI/UX" },
-  //     { title: "A Neat & Clean Design" },
-  //     { title: "Multipage Website" },
-  //   ],
-  //   link: "https://www.neupaneabinash.com",
-  //   repo: "https://github.com/virtualabishek/brotherProtfolio",
-  //   image: brotherProtfolio,
-  // },
 ];
 
 const ProjectsSection = () => {
@@ -104,13 +116,29 @@ const ProjectsSection = () => {
                       </a>
                     </div>
                     <div>
-                      <a
-                        href={project.repo}
-                        className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
-                      >
-                        <span>Visit Repo </span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </a>
+                      {project.repo ? (
+                        <a
+                          href={project.repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                        >
+                          <span>Visit Repo</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() =>
+                            toast(
+                              "This is a real-world project and its code is proprietary."
+                            )
+                          }
+                          className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                        >
+                          <span>Visit Repo</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -7,6 +7,7 @@ import "@fontsource/inter";
 import "@fontsource/calistoga";
 import Project from "./pages/Project.jsx";
 import Perspective from "./pages/Perspective.jsx";
+import { Toaster } from "react-hot-toast";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <div className={dynamicClasses}>
+      <Toaster position="top-right" reverseOrder={false} />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -9,9 +9,7 @@ import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
 import ArrowUpRightIcon from "../components/svgComponents/ArrowUpRightIcon";
-// Project List
-// yaha dherai rakhna pacrha.
-
+import { toast } from "react-hot-toast";
 const imageMap = {
   nepDoc,
   rojgarSabailai,
@@ -73,19 +71,35 @@ const Project = () => {
                       </a>
                     </div>
                     <div>
-                      <a
-                        href={project.repo}
-                        className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
-                      >
-                        <span>Visit Repo </span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </a>
+                      {project.repo ? (
+                        <a
+                          href={project.repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                        >
+                          <span>Visit Repo</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() =>
+                            toast(
+                              "This is a real-world project and its code is proprietary."
+                            )
+                          }
+                          className="bg-white text-gray-950 h-12 w-full md:w-fit px-4 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                        >
+                          <span>Visit Repo</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
                 <div className="relative lg:h-full">
                   <img
-                    src={imageMap[project.imageName]} // Changed from project.image to project.imageName
+                    src={imageMap[project.imageName]}
                     alt={project.title}
                     className="mt-8 -mb-4 md:mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />

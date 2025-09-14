@@ -23,3 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+/src/pages/projects
+/src/pages/projects/
+/src/pages/projects/*
