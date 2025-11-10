@@ -75,7 +75,7 @@ const Notify = () => {
             {/* Header */}
             <div className="bg-gradient-to-r from-emerald-500/20 to-sky-500/20 px-4 sm:px-5 py-3 sm:py-4 border-b border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
-                <div className="bg-gradient-to-br from-emerald-400 to-sky-400 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
+                <div className="bg-gradient-to-br from-emerald-600 to-sky-600 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
                   <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div className="min-w-0 flex-1">
