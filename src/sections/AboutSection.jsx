@@ -3,39 +3,63 @@ import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CardHeader from "../components/extra/CardHeader";
 import bookImage from "../assets/images/bookCover.png";
-import JavascriptIcon from "../components/svgComponents/JavaScriptIcon";
-import HTMLIcon from "../components/svgComponents/Html5";
-import CssIcon from "../components/svgComponents/Css3";
-import ReactIcon from "../components/svgComponents/ReactIcon";
-import ChromeIcon from "../components/svgComponents/Chrome";
-import GithubIcon from "../components/svgComponents/Github";
-import ToolBoxItems from "../components/extra/ToolBoxItems";
-import NodeIcon from "../components/svgComponents/NodeIcon";
-import TypeScriptIcon from "../components/svgComponents/TypeScriptIcon";
-import PostgreSQLIcon from "../components/svgComponents/PostgreSQLIcon";
-import MySQLIcon from "../components/svgComponents/MySQL";
-import NextJsIcon from "../components/svgComponents/NextJs";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiGithub,
+  SiMysql,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiPostgresql,
+  SiPrisma,
+  SiSequelize,
+  SiPhp,
+  SiDocker,
+  SiLinux,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import CityImage from "../assets/images/City.png";
 import smileEmoji from "../assets/images/memoji-smile.png";
-import { title } from "framer-motion/client";
-// import { title } from "framer-motion/client";
-// yaha color milauna cha, svg components ko. js, react, html, yati ko
+import ToolBoxItems from "../components/extra/ToolBoxItems";
 
 const toolboxItems = [
-  { title: "Javascript", iconType: JavascriptIcon },
-  { title: "HTML5", iconType: HTMLIcon },
-  { title: "PostGress", iconType: PostgreSQLIcon },
-  { title: "CSS3", iconType: CssIcon },
-  { title: "React", iconType: ReactIcon },
-  { title: "TypeScript", iconType: TypeScriptIcon },
-  { title: "MySQL", iconType: MySQLIcon },
-  { title: "Chrome", iconType: ChromeIcon },
-  { title: "Next JS", iconType: NextJsIcon },
-  { title: "Github", iconType: GithubIcon },
-  { title: "Node.js", iconType: NodeIcon },
+  {
+    title: "JavaScript",
+    icon: <SiJavascript className="w-8 h-8 text-yellow-400" />,
+  },
+  { title: "HTML5", icon: <SiHtml5 className="w-10 h-10 text-orange-600" /> },
+  { title: "CSS3", icon: <SiCss3 className="w-10 h-10 text-blue-600" /> },
+  { title: "React", icon: <SiReact className="w-10 h-10 text-cyan-500" /> },
+  { title: "Next.js", icon: <SiNextdotjs className="w-10 h-10 text-white" /> },
+  {
+    title: "Node.js",
+    icon: <SiNodedotjs className="w-10 h-10 text-green-500" />,
+  },
+  {
+    title: "TypeScript",
+    icon: <SiTypescript className="w-10 h-10 text-blue-600" />,
+  },
+  { title: "GitHub", icon: <SiGithub className="w-9 h-9 text-white" /> },
+  { title: "MySQL", icon: <SiMysql className="w-10 h-10 text-blue-700" /> },
+  {
+    title: "PostgreSQL",
+    icon: <SiPostgresql className="w-10 h-10 text-sky-700" />,
+  },
+  {
+    title: "Prisma ORM",
+    icon: <SiPrisma className="w-10 h-10 text-gray-200" />,
+  },
+  {
+    title: "Sequelize ORM",
+    icon: <SiSequelize className="w-10 h-10 text-blue-500" />,
+  },
+  { title: "PHP", icon: <SiPhp className="w-10 h-10 text-indigo-500" /> },
+  { title: "Docker", icon: <SiDocker className="w-10 h-10 text-blue-400" /> },
+  { title: "Linux", icon: <SiLinux className="w-10 h-10 text-yellow-400" /> },
 ];
-
 const hobbies = [
   { title: "Reading", emoji: "📚", top: "5%", left: "5%" },
   { title: "Exploring", emoji: "💥", top: "5%", left: "50%" },
@@ -62,28 +86,29 @@ const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1 mb-8 md:mb-0">
               <CardHeader
                 title="My Reads"
-                description="I am reading ZEN this days. TODAY. PRESENCE."
+                description="I am reading 'Mystic's Musings.' this days.  "
               />
               <div className="w-40 mx-auto mt-2">
                 <img src={bookImage} alt="Jeevan Kada Ki Ful" />
               </div>
             </Card>
-            <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
+            <Card className="h-[320px] p-0 overflow-hidden md:col-span-3 lg:col-span-2">
               <CardHeader
-                title={"My Toolbox"}
-                description={
-                  "Explore the technologies and tools used to craft the digital experiences."
-                }
+                title="My Toolbox"
+                description="Technologies that power my digital creations."
+                className="px-8 pt-8"
               />
-              <ToolBoxItems
-                items={toolboxItems}
-                itemWrapperClassName="animate-move-left [animate-duration-30s]"
-              />
-              <ToolBoxItems
-                items={toolboxItems}
-                className="mt-6"
-                itemWrapperClassName="animate-move-right [animate-duration-30s]"
-              />
+              <div className="px-8 pb-8">
+                <ToolBoxItems
+                  items={toolboxItems}
+                  itemWrapperClassName="animate-move-left [animation-duration:60s]"
+                />
+                <ToolBoxItems
+                  items={toolboxItems}
+                  className="mt-6 -ml-8"
+                  itemWrapperClassName="animate-move-right [animation-duration:75s]"
+                />
+              </div>
             </Card>
           </div>
           <div className="md:grid md:grid-cols-5 lg:grid-cols-3 md:gap-8">
