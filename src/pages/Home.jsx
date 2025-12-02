@@ -5,12 +5,12 @@ import TapeSection from "../sections/TapeSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
 import AboutSection from "../sections/AboutSection";
 import ContactSection from "../sections/ContactSection";
-import Notify from "../components/Notify";
+// import Notify from "../components/Notify";
 
 const Home = () => {
   return (
     <>
-      <Notify />
+      {/* <Notify /> */}
       <main>
         <HeroSection />
         <ProjectsSection />
