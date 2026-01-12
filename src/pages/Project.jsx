@@ -5,6 +5,7 @@ import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
 import brotherProtfolio from "../assets/images/brotherProtfolio.png";
 import collegeCover from "../assets/images/collegeCover.png";
+import newsSite from "../assets/images/siteNews.png"
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
@@ -15,6 +16,7 @@ const imageMap = {
   rojgarSabailai,
   brotherProtfolio,
   collegeCover,
+  newsSite
 };
 
 const Project = () => {

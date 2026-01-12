@@ -1,13 +1,39 @@
 {
   "projects": [
     {
-      "name": "nepDoc",
-      "year": 2024,
-      "title": "A Doctor Appointment Web App",
+      "name": "Himdev Educational Foundation",
+      "year": 2025,
+      "title": "College Website",
       "results": [
-        { "title": "A Smooth & Functional UI/UX" },
-        { "title": "All the details about Doctors" },
-        { "title": "Can Logged In & Book Appointments" }
+        { "title": "Modern, responsive UI/UX design" },
+        { "title": "Comprehensive course catalog" },
+        { "title": "Faculty & leadership profiles" }
+      ],
+      "link": "https://himdeveducationalfoundation.in",
+      "repo": "https://github.com/nefoligeek/himdev-app",
+      "imageName": "collegeCover"
+    },
+    {
+      "name": "24 Hour News",
+      "year": 2025,
+      "title": "Nepali News Aggregator",
+      "results": [
+        { "title": "Real-time news from top Nepali sources" },
+        { "title": "Category-based news filtering" },
+        { "title": "Web scraping with source redirection" }
+      ],
+      "link": "https://news.bhagawat.com.np",
+      "repo": "",
+      "imageName": "newsSite"
+    },
+    {
+      "name": "NepDoc",
+      "year": 2024,
+      "title": "Doctor Appointment Platform",
+      "results": [
+        { "title": "Intuitive booking interface" },
+        { "title": "Doctor profiles & specializations" },
+        { "title": "User authentication & scheduling" }
       ],
       "link": "https://nep-doc.vercel.app",
       "repo": "https://github.com/virtualabishek/nepDoc",
@@ -16,41 +42,28 @@
     {
       "name": "Rojgar Sabailai",
       "year": 2023,
-      "title": "RS - Online Job Portal",
+      "title": "Online Job Portal",
       "results": [
-        { "title": "Created a responsive UI/UX" },
-        { "title": "User can apply and post the job" },
-        { "title": "Filter of a relative job" }
+        { "title": "Fully responsive design" },
+        { "title": "Job posting & application system" },
+        { "title": "Advanced job filtering" }
       ],
       "link": "https://rojgarsabailai.netlify.com",
-      "repo": "https://github.com/virtualabishek/Hackathon-Project/tree/master/api-v1-master%20-%20Finall%20with%20backend/api-v1-master",
+      "repo": "https://github.com/virtualabishek/Hackathon-Project",
       "imageName": "rojgarSabailai"
     },
     {
       "name": "Brother Portfolio",
       "year": 2022,
-      "title": "Simple Portfolio Website",
+      "title": "Personal Portfolio Website",
       "results": [
-        { "title": "Created a responsive UI/UX" },
-        { "title": "A Neat & Clean Design" },
-        { "title": "Multipage Website" }
+        { "title": "Clean, minimal design" },
+        { "title": "Fully responsive layout" },
+        { "title": "Multi-page navigation" }
       ],
       "link": "https://www.neupaneabinash.com",
       "repo": "https://github.com/virtualabishek/brotherProtfolio",
       "imageName": "brotherProtfolio"
-    },
-    {
-      "name": "Himdev Educational Foundation",
-      "year": 2025,
-      "title": "A College Website",
-      "results": [
-        { "title": "A Modern UI/UX" },
-        { "title": "Detail of all the courses." },
-        { "title": "Message of CEO" }
-      ],
-      "link": "https://himdeveducationalfoundation.in",
-      "repo": "https://github.com/nefoligeek/himdev-app",
-      "imageName": "collegeCover"
     }
   ]
 }

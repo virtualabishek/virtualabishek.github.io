@@ -2,6 +2,7 @@ import nepDoc from "../assets/images/nepDoc.png";
 import rojgarSabailai from "../assets/images/rojgarSabailai.png";
 import wishPix from "../assets/images/wishpix.png";
 import nationPortal from "../assets/images/4np.png";
+import newsSite from "../assets/images/siteNews.png";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
 import CheckCircleIcon from "../components/svgComponents/CheckCircleIcon";
@@ -9,6 +10,18 @@ import ArrowUpRightIcon from "../components/svgComponents/ArrowUpRightIcon";
 import { toast } from "react-hot-toast";
 
 const protfolioProjects = [
+  {
+    name: "24 Hour News",
+    year: 2025,
+    title: "Nepali News Scrapper",
+    results: [
+      { title: "Real-time news from top Nepali sources" },
+      { title: "Category-based news filtering" },
+      { title: "Gives trust worthy 24 hour past news" },
+    ],
+    link: "https://news.bhagawat.com.np",
+    image: newsSite,
+  },
   {
     name: "WishPix",
     year: 2025,
