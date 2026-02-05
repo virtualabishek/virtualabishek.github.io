@@ -1,0 +1,256 @@
+{
+    "categories": [
+        {
+            "id": "google-ux",
+            "name": "Google UX Design",
+            "provider": "Google",
+            "platform": "Coursera",
+            "description": "User Experience Design fundamentals and process",
+            "icon": "google",
+            "certificates": [
+                {
+                    "id": "google-ux-1",
+                    "title": "UX Design Process",
+                    "fullTitle": "Google UX Design Process Certificate",
+                    "image": "coursera/1-google-ux-design-process-1.png",
+                    "verifyLink": "https://coursera.org/share/91c4477641a72741be375abef91481e5"
+                },
+                {
+                    "id": "google-ux-2",
+                    "title": "Foundations of UX",
+                    "fullTitle": "Google Foundations of UX Certificate",
+                    "image": "coursera/2-google-foundation-of-ux-1.png",
+                    "verifyLink": "https://coursera.org/share/ce37c4df8947c3cf2337feaadda82ff1"
+                },
+                {
+                    "id": "google-ux-3",
+                    "title": "UX Research and Design",
+                    "fullTitle": "Google UX Research and Design Certificate",
+                    "image": "coursera/03-ux-research-design-1.png",
+                    "verifyLink": "https://coursera.org/share/3c2f37ec21bde5446f9fd73c881555d5"
+                },
+                {
+                    "id": "google-ux-4",
+                    "title": "UX Wireframes and Prototypes",
+                    "fullTitle": "Google UX Design Wireframes and Prototypes Certificate",
+                    "image": "coursera/04-ux-design-wireframes-prototypes-1.png",
+                    "verifyLink": "https://coursera.org/share/c9f77925e488da644416edb90019db92"
+                }
+            ]
+        },
+        {
+            "id": "meta-frontend",
+            "name": "Meta Frontend Development",
+            "provider": "Meta",
+            "platform": "Coursera",
+            "description": "React and modern web development",
+            "icon": "meta",
+            "certificates": [
+                {
+                    "id": "meta-frontend-1",
+                    "title": "Introduction to Frontend",
+                    "fullTitle": "Meta Introduction to Frontend Certificate",
+                    "image": "coursera/1-meta-introduction-to-frontend-1.png",
+                    "verifyLink": "https://coursera.org/share/f947ccfeda4d4ed782f33a361f5efa96"
+                },
+                {
+                    "id": "meta-frontend-2",
+                    "title": "HTML and CSS in Depth",
+                    "fullTitle": "Meta HTML and CSS in Depth Certificate",
+                    "image": "coursera/2-meta-html-css-in-depth-1.png",
+                    "verifyLink": "https://coursera.org/share/1c999ebbf7c07094e82118ff3985476c"
+                },
+                {
+                    "id": "meta-frontend-3",
+                    "title": "Programming with JavaScript",
+                    "fullTitle": "Meta Programming with JavaScript Certificate",
+                    "image": "coursera/3-meta-programming-with-js-1.png",
+                    "verifyLink": "https://coursera.org/share/d429bff63c83db5bfb05ac58a36792fd"
+                },
+                {
+                    "id": "meta-frontend-4",
+                    "title": "React Basics",
+                    "fullTitle": "Meta React Certificate",
+                    "image": "coursera/4-meta-basic-react-1.png",
+                    "verifyLink": "https://coursera.org/share/b37f9214d5d8f5635c95633b4f2ee11f"
+                },
+                {
+                    "id": "meta-frontend-5",
+                    "title": "Advanced React",
+                    "fullTitle": "Meta Advanced React Certificate",
+                    "image": "coursera/5-meta-advance-react-1.png",
+                    "verifyLink": "https://coursera.org/share/a6603ea8149a09db39449962adab0740"
+                },
+                {
+                    "id": "meta-frontend-6",
+                    "title": "Version Control",
+                    "fullTitle": "Meta Version Control Certificate",
+                    "image": "coursera/6-meta-version-control-1.png",
+                    "verifyLink": "https://coursera.org/share/5d0b2d2cbcd724ae0b82c6fba216f268"
+                }
+            ]
+        },
+        {
+            "id": "programiz",
+            "name": "Programiz",
+            "provider": "Programiz",
+            "platform": "Programiz Pro",
+            "description": "Python and JavaScript programming courses",
+            "icon": "programiz",
+            "certificates": [
+                {
+                    "id": "programiz-1",
+                    "title": "Learn Python Basic",
+                    "fullTitle": "Programiz Learn Python Basic Certificate",
+                    "image": "programiz/1-programiz-learn-python-basic-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/98AA19A093BC"
+                },
+                {
+                    "id": "programiz-2",
+                    "title": "Practice Python Basic",
+                    "fullTitle": "Programiz Practice Python Basic Certificate",
+                    "image": "programiz/2-programiz-Practice-python-basic-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/7BB5F1690C97"
+                },
+                {
+                    "id": "programiz-3",
+                    "title": "Learn Python Intermediate",
+                    "fullTitle": "Programiz Learn Python Intermediate Certificate",
+                    "image": "programiz/3-programiz-learn-python-intermideiate-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/77AB6AB6BDE5"
+                },
+                {
+                    "id": "programiz-4",
+                    "title": "Practice Python Intermediate",
+                    "fullTitle": "Programiz Practice Python Intermediate Certificate",
+                    "image": "programiz/4-programiz-learn-python-intermideiate-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/17A444BF6A61"
+                },
+                {
+                    "id": "programiz-5",
+                    "title": "Learn Python Interview",
+                    "fullTitle": "Programiz Learn Python Interview Certificate",
+                    "image": "programiz/5-programiz-learn-python-interview-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/CC1E53107914"
+                },
+                {
+                    "id": "programiz-6",
+                    "title": "Learn JavaScript Basic",
+                    "fullTitle": "Programiz Learn JavaScript Basic Certificate",
+                    "image": "programiz/6-programiz-learn-javascript-basic-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/28D57823F5A9"
+                },
+                {
+                    "id": "programiz-7",
+                    "title": "Learn JavaScript Intermediate",
+                    "fullTitle": "Programiz Learn JavaScript Intermediate Certificate",
+                    "image": "programiz/7-programiz-learn-javascript-intermediate-1.png",
+                    "verifyLink": "https://programiz.pro/certificates/11AECEB13B31"
+                }
+            ]
+        },
+        {
+            "id": "datacamp",
+            "name": "DataCamp",
+            "provider": "DataCamp",
+            "platform": "DataCamp",
+            "description": "Data Science, Python, and DevOps skills",
+            "icon": "datacamp",
+            "certificates": [
+                {
+                    "id": "datacamp-1",
+                    "title": "Introduction to Python",
+                    "fullTitle": "DataCamp Introduction to Python Certificate",
+                    "image": "datacamp/1-datacamp-intro-to-python-1.png",
+                    "verifyLink": "https://www.datacamp.com/completed/statement-of-accomplishment/course/058bbf095bf88fbe534f31731dccd2bd95c1c7dd"
+                },
+                {
+                    "id": "datacamp-2",
+                    "title": "Intermediate Python",
+                    "fullTitle": "DataCamp Intermediate Python Certificate",
+                    "image": "datacamp/2-datacamp-intermediate-python-1.png",
+                    "verifyLink": "https://www.datacamp.com/completed/statement-of-accomplishment/course/5181074052c3c2c0bbd2ff1b3575d13790cfaf43"
+                },
+                {
+                    "id": "datacamp-3",
+                    "title": "Data Manipulation with Python",
+                    "fullTitle": "DataCamp Data Manipulation with Python Certificate",
+                    "image": "datacamp/3-datacamp-data-manipulation-with-python-1.png",
+                    "verifyLink": "https://www.datacamp.com/completed/statement-of-accomplishment/course/7018a8479bed58b6f99c0cf29bb964599db798d7"
+                },
+                {
+                    "id": "datacamp-4",
+                    "title": "Introduction to Java",
+                    "fullTitle": "DataCamp Introduction to Java Certificate",
+                    "image": "datacamp/4-datacamp-introduction-to-java-1.png",
+                    "verifyLink": "https://www.datacamp.com/completed/statement-of-accomplishment/course/55a707bca30e70422e641e1b963c9b816af63fb1"
+                },
+                {
+                    "id": "datacamp-5",
+                    "title": "Introduction to Docker",
+                    "fullTitle": "DataCamp Introduction to Docker Certificate",
+                    "image": "datacamp/5-datacamp-intro-to-docker-1.png",
+                    "verifyLink": "https://www.datacamp.com/completed/statement-of-accomplishment/course/b042a9768905efed9944094672886baaa679fbb4"
+                }
+            ]
+        },
+        {
+            "id": "hackathon",
+            "name": "Hackathons",
+            "provider": "Various",
+            "platform": "Competitions",
+            "description": "Team projects and competitive programming",
+            "icon": "trophy",
+            "certificates": [
+                {
+                    "id": "hackathon-gibl",
+                    "title": "Global IME Bank AI/ML Hackathon",
+                    "fullTitle": "Global IME Bank AI/ML Hackathon - Document Classification",
+                    "description": "AI/ML document classification project - Selected from 200+ teams. This hackathon sparked my deep interest in AI/ML.",
+                    "image": "hackathon/gibl-ai-ml-hackathon/certificates.png",
+                    "gallery": [
+                        "hackathon/gibl-ai-ml-hackathon/certificates.png",
+                        "hackathon/gibl-ai-ml-hackathon/gibl-document-classification.png",
+                        "hackathon/gibl-ai-ml-hackathon/selected-research-paper.png",
+                        "hackathon/gibl-ai-ml-hackathon/team-final-gibl.png",
+                        "hackathon/gibl-ai-ml-hackathon/token-of-love.png",
+                        "hackathon/gibl-ai-ml-hackathon/welcome-gibl.png"
+                    ],
+                    "verifyLink": null
+                },
+                {
+                    "id": "hackathon-bpc",
+                    "title": "BPC Hackathon",
+                    "fullTitle": "BPC Hackathon - Freelancing Platform",
+                    "description": "Built a freelancing-style system for semi-skilled users using JavaScript. A very meaningful collaboration with my amazing team.",
+                    "image": "hackathon/bpc-hackathon/certificates.png",
+                    "gallery": [
+                        "hackathon/bpc-hackathon/certificates.png",
+                        "hackathon/bpc-hackathon/job-finding-platform-sample.png",
+                        "hackathon/bpc-hackathon/selected.png",
+                        "hackathon/bpc-hackathon/team-photo.png"
+                    ],
+                    "verifyLink": null
+                },
+                {
+                    "id": "hackathon-dav",
+                    "title": "DAV Hackathon",
+                    "fullTitle": "DAV Hackathon - Smart Farming System",
+                    "description": "Arduino-based smart farming system monitoring soil and environmental factors. Built with amazing juniors who taught me a lot about hardware.",
+                    "image": "hackathon/dav-hackathon/certificates.png",
+                    "gallery": [
+                        "hackathon/dav-hackathon/certificates.png",
+                        "hackathon/dav-hackathon/coding-with-team.png",
+                        "hackathon/dav-hackathon/presenting.png",
+                        "hackathon/dav-hackathon/self.png"
+                    ],
+                    "verifyLink": null
+                }
+            ]
+        }
+    ],
+    "quote": {
+        "text": "When I go back to God after my life, I want to make sure I go back with absolutely no talent and tell him, 'I used up everything you gave me.'",
+        "note": "I always read and try to expand my knowledge. These are the certificates I have earned so far, and I'm still learning more."
+    }
+}
