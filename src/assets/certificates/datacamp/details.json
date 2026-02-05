@@ -1,0 +1,32 @@
+[
+  {
+    "title_alt": "DataCamp Introduction to Python Certificate",
+    "certificate_name": "Introduction to Python",
+    "image": "1-datacamp-intro-to-python-1.png",
+    "verify_link": "https://www.datacamp.com/completed/statement-of-accomplishment/course/058bbf095bf88fbe534f31731dccd2bd95c1c7dd"
+  },
+  {
+    "title_alt": "DataCamp Intermediate Python Certificate",
+    "certificate_name": "Intermediate Python",
+    "image": "2-datacamp-intermediate-python-1.png",
+    "verify_link": "https://www.datacamp.com/completed/statement-of-accomplishment/course/5181074052c3c2c0bbd2ff1b3575d13790cfaf43"
+  },
+  {
+    "title_alt": "DataCamp Data Manipulation with Python Certificate",
+    "certificate_name": "Data Manipulation with Python",
+    "image": "3-datacamp-data-manipulation-with-python-1.png",
+    "verify_link": "https://www.datacamp.com/completed/statement-of-accomplishment/course/7018a8479bed58b6f99c0cf29bb964599db798d7"
+  },
+  {
+    "title_alt": "DataCamp Introduction to Java Certificate",
+    "certificate_name": "Introduction to Java",
+    "image": "4-datacamp-introduction-to-java-1.png",
+    "verify_link": "https://www.datacamp.com/completed/statement-of-accomplishment/course/55a707bca30e70422e641e1b963c9b816af63fb1"
+  },
+  {
+    "title_alt": "DataCamp Introduction to Docker Certificate",
+    "certificate_name": "Introduction to Docker",
+    "image": "5-datacamp-intro-to-docker-1.png",
+    "verify_link": "https://www.datacamp.com/completed/statement-of-accomplishment/course/b042a9768905efed9944094672886baaa679fbb4"
+  }
+]

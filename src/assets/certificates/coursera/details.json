@@ -1,0 +1,74 @@
+{
+    "categories": [
+        {
+            "category": "Meta / Facebook Frontend",
+            "certificates": [
+                {
+                    "title_alt": "Meta Introduction to Frontend Certificate",
+                    "certificate_name": "Introduction to Frontend",
+                    "image": "1-facebook-introduction-to-frontend-1.png",
+                    "verify_link": "https://coursera.org/share/f947ccfeda4d4ed782f33a361f5efa96"
+                },
+                {
+                    "title_alt": "Meta HTML and CSS in Depth Certificate",
+                    "certificate_name": "HTML and CSS in Depth",
+                    "image": "2-facebook-html-css-in-depth-1.png",
+                    "verify_link": "https://coursera.org/share/1c999ebbf7c07094e82118ff3985476c"
+                },
+                {
+                    "title_alt": "Meta Programming with JavaScript Certificate",
+                    "certificate_name": "Programming with JavaScript",
+                    "image": "3-facebook-programming-with-js-1.png",
+                    "verify_link": "https://coursera.org/share/d429bff63c83db5bfb05ac58a36792fd"
+                },
+                {
+                    "title_alt": "Meta React Certificate",
+                    "certificate_name": "React",
+                    "image": "4-facebook-react-1.png",
+                    "verify_link": "https://coursera.org/share/b37f9214d5d8f5635c95633b4f2ee11f"
+                },
+                {
+                    "title_alt": "Meta Advanced React Certificate",
+                    "certificate_name": "Advanced React",
+                    "image": "5-facebook-advance-react",
+                    "verify_link": "https://coursera.org/share/a6603ea8149a09db39449962adab0740"
+                },
+                {
+                    "title_alt": "Meta Version Control Certificate",
+                    "certificate_name": "Version Control",
+                    "image": "6-facebook-version-control-1.png",
+                    "verify_link": "https://coursera.org/share/5d0b2d2cbcd724ae0b82c6fba216f268"
+                }
+            ]
+        },
+        {
+            "category": "Google UX",
+            "certificates": [
+                {
+                    "title_alt": "Google UX Design Process Certificate",
+                    "certificate_name": "UX Design Process",
+                    "image": "1-google-ux-design-process-1.png",
+                    "verify_link": "https://coursera.org/share/91c4477641a72741be375abef91481e5"
+                },
+                {
+                    "title_alt": "Google Foundations of UX Certificate",
+                    "certificate_name": "Foundations of UX",
+                    "image": "2-google-foundation-of-ux-1.png",
+                    "verify_link": "https://coursera.org/share/ce37c4df8947c3cf2337feaadda82ff1"
+                },
+                {
+                    "title_alt": "Google UX Research and Design Certificate",
+                    "certificate_name": "UX Research and Design",
+                    "image": "03-google-ux-research-design-1.png",
+                    "verify_link": "https://coursera.org/share/3c2f37ec21bde5446f9fd73c881555d5"
+                },
+                {
+                    "title_alt": "Google UX Wireframes and Prototypes Certificate",
+                    "certificate_name": "UX Design Wireframes and Prototypes",
+                    "image": "04-google-ux-design-wireframes-prototypes-1.png",
+                    "verify_link": "https://coursera.org/share/c9f77925e488da644416edb90019db92"
+                }
+            ]
+        }
+    ]
+}

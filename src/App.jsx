@@ -7,6 +7,7 @@ import "@fontsource/inter";
 import "@fontsource/calistoga";
 import Project from "./pages/Project.jsx";
 import Perspective from "./pages/Perspective.jsx";
+import Certificates from "./pages/Certificates.jsx";
 import { Toaster } from "react-hot-toast";
 
 import { Route, Routes } from "react-router-dom";
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/perspective" element={<Perspective />} />
+        <Route path="/certificates" element={<Certificates />} />
       </Routes>
 
       <Footer />

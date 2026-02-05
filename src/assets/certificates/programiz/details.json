@@ -1,0 +1,44 @@
+[
+    {
+        "title_alt": "Programiz Learn Python Basic Certificate",
+        "certificate_name": "Learn Python Basic",
+        "image": "1-programiz-learn-python-basic-1.png",
+        "verify_link": "https://programiz.pro/certificates/98AA19A093BC"
+    },
+    {
+        "title_alt": "Programiz Practice Python Basic Certificate",
+        "certificate_name": "Practice Python Basic",
+        "image": "2-programiz-Practice-python-basic-1.png",
+        "verify_link": "https://programiz.pro/certificates/7BB5F1690C97"
+    },
+    {
+        "title_alt": "Programiz Learn Python Intermediate Certificate",
+        "certificate_name": "Learn Python Intermediate",
+        "image": "3-programiz-learn-python-intermideiate-1.png",
+        "verify_link": "https://programiz.pro/certificates/77AB6AB6BDE5"
+    },
+    {
+        "title_alt": "Programiz Practice Python Intermediate Certificate",
+        "certificate_name": "Practice Python Intermediate",
+        "image": "4-programiz-Practice-Python-Intermediate-1.png",
+        "verify_link": "https://programiz.pro/certificates/17A444BF6A61"
+    },
+    {
+        "title_alt": "Programiz Learn Python Interview Certificate",
+        "certificate_name": "Learn Python Interview",
+        "image": "5-programiz-learn-python-interview-1.png",
+        "verify_link": "https://programiz.pro/certificates/CC1E53107914"
+    },
+    {
+        "title_alt": "Programiz Learn JavaScript Basic Certificate",
+        "certificate_name": "Learn JavaScript Basic",
+        "image": "6-programiz-learn-javascript-basic-1.png",
+        "verify_link": "https://programiz.pro/certificates/28D57823F5A9"
+    },
+    {
+        "title_alt": "Programiz Learn JavaScript Intermediate Certificate",
+        "certificate_name": "Learn JavaScript Intermediate",
+        "image": "7-programiz-learn-javascript-intermediate-1.png",
+        "verify_link": "https://programiz.pro/certificates/11AECEB13B31"
+    }
+]
