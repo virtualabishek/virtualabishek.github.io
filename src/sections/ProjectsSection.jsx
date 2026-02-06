@@ -19,7 +19,7 @@ const protfolioProjects = [
       { title: "Category-based news filtering" },
       { title: "Gives trust worthy 24 hour past news" },
     ],
-    link: "https://news.bhagawat.com.np",
+    link: "https://news.bhagawatin.com.np/",
     image: newsSite,
   },
   {
