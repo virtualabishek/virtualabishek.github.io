@@ -6,6 +6,8 @@ import certificatesData from "../assets/certificates/certificates.json";
 import { ArrowRight, Award, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import OptimizedImage from "../components/extra/OptimizedImage";
+
 const certificateImages = import.meta.glob(
     "../assets/certificates/**/*.png",
     { eager: true }
@@ -15,6 +17,7 @@ const getImageUrl = (imagePath) => {
     const fullPath = `../assets/certificates/${imagePath}`;
     return certificateImages[fullPath]?.default || "";
 };
+
 
 const getAllCertificates = () => {
     const allCerts = [];
@@ -140,10 +143,11 @@ const CertificatesSection = () => {
                                         className="group overflow-hidden hover:scale-[1.02] transition-all duration-300"
                                     >
                                         <div className="relative overflow-hidden">
-                                            <img
+                                            <OptimizedImage
                                                 src={getImageUrl(cert.image)}
                                                 alt={cert.title}
-                                                className="w-full h-64 md:h-80 object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
+                                                containerClassName="w-full h-64 md:h-80"
+                                                className="w-full h-full object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
 

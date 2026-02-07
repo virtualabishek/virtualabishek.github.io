@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import OptimizedImage from "./extra/OptimizedImage";
 
 const ImageModal = ({
     isOpen,
@@ -90,10 +91,12 @@ const ImageModal = ({
                         </div>
 
                         <div className="relative flex-1 flex items-center justify-center bg-gray-900/50 rounded-2xl overflow-hidden">
-                            <img
+                            <OptimizedImage
                                 src={images[currentIndex]}
                                 alt={title}
-                                className="max-w-full max-h-[70vh] object-contain"
+                                priority={true}
+                                containerClassName="w-full h-full"
+                                className="max-w-full max-h-[70vh] object-contain mx-auto"
                             />
 
                             {images.length > 1 && (
@@ -135,9 +138,10 @@ const ImageModal = ({
                                             : "opacity-60 hover:opacity-100"
                                             }`}
                                     >
-                                        <img
+                                        <OptimizedImage
                                             src={img}
                                             alt={`Thumbnail ${idx + 1}`}
+                                            containerClassName="w-full h-full"
                                             className="w-full h-full object-cover"
                                         />
                                     </button>
