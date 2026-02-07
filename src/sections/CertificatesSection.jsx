@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/extra/SectionHeader";
 import Card from "../components/extra/Card";
+import ImageModal from "../components/ImageModal";
 import certificatesData from "../assets/certificates/certificates.json";
-import { ArrowRight, Award, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, Award, ExternalLink, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+
+import OptimizedImage from "../components/extra/OptimizedImage";
 
 const certificateImages = import.meta.glob(
     "../assets/certificates/**/*.png",
@@ -36,6 +39,13 @@ const allCertificates = getAllCertificates();
 const CertificatesSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState(1);
+    const [modalState, setModalState] = useState({
+        isOpen: false,
+        images: [],
+        currentIndex: 0,
+        title: "",
+        verifyLink: null,
+    });
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -55,6 +65,28 @@ const CertificatesSection = () => {
     const handleNext = () => {
         setDirection(1);
         setCurrentIndex((prev) => (prev + 2) % allCertificates.length);
+    };
+
+    const handleImageClick = (cert) => {
+        const images = cert.gallery
+            ? cert.gallery.map(img => getImageUrl(img))
+            : [getImageUrl(cert.image)];
+
+        setModalState({
+            isOpen: true,
+            images: images,
+            currentIndex: 0,
+            title: cert.fullTitle || cert.title,
+            verifyLink: cert.verifyLink,
+        });
+    };
+
+    const handleModalClose = () => {
+        setModalState((prev) => ({ ...prev, isOpen: false }));
+    };
+
+    const handleModalNavigate = (index) => {
+        setModalState((prev) => ({ ...prev, currentIndex: index }));
     };
 
     const visibleCertificates = [
@@ -137,15 +169,23 @@ const CertificatesSection = () => {
                                 {visibleCertificates.map((cert, idx) => (
                                     <Card
                                         key={`${cert.id}-${idx}`}
-                                        className="group overflow-hidden hover:scale-[1.02] transition-all duration-300"
+                                        className="group overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                                        onClick={() => handleImageClick(cert)}
                                     >
                                         <div className="relative overflow-hidden">
-                                            <img
+                                            <OptimizedImage
                                                 src={getImageUrl(cert.image)}
                                                 alt={cert.title}
-                                                className="w-full h-64 md:h-80 object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
+                                                containerClassName="w-full h-64 md:h-80"
+                                                className="w-full h-full object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
+
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                                <div className="p-4 bg-black/60 rounded-full">
+                                                    <ZoomIn className="size-8 text-white" />
+                                                </div>
+                                            </div>
 
                                             <div className="absolute top-4 left-4 px-3 py-1.5 bg-emerald-500/20 backdrop-blur-sm rounded-full">
                                                 <span className="text-sm font-semibold text-emerald-400">
@@ -162,15 +202,12 @@ const CertificatesSection = () => {
                                                 {cert.categoryName}
                                             </p>
                                             {cert.verifyLink && (
-                                                <a
-                                                    href={cert.verifyLink}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                <span
                                                     className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
                                                 >
-                                                    <span>Verify Certificate</span>
+                                                    <span>View Certificate</span>
                                                     <ExternalLink className="size-4" />
-                                                </a>
+                                                </span>
                                             )}
                                         </div>
                                     </Card>
@@ -207,6 +244,16 @@ const CertificatesSection = () => {
                     </Link>
                 </div>
             </div>
+
+            <ImageModal
+                isOpen={modalState.isOpen}
+                onClose={handleModalClose}
+                images={modalState.images}
+                currentIndex={modalState.currentIndex}
+                onNavigate={handleModalNavigate}
+                title={modalState.title}
+                verifyLink={modalState.verifyLink}
+            />
         </section>
     );
 };

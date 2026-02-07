@@ -1,10 +1,12 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import SectionHeader from "../components/extra/SectionHeader";
 import ImageModal from "../components/ImageModal";
 import certificatesData from "../assets/certificates/certificates.json";
 import Card from "../components/extra/Card";
 import { ChevronLeft, ChevronRight, Award, Code, Database, Trophy, ExternalLink, ZoomIn } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+
+import OptimizedImage from "../components/extra/OptimizedImage";
 
 const certificateImages = import.meta.glob(
     "../assets/certificates/**/*.png",
@@ -15,6 +17,7 @@ const getImageUrl = (imagePath) => {
     const fullPath = `../assets/certificates/${imagePath}`;
     return certificateImages[fullPath]?.default || "";
 };
+
 
 const categoryIcons = {
     "google-ux": Award,
@@ -93,6 +96,19 @@ const Certificates = () => {
     };
 
     const CategoryIcon = categoryIcons[currentCategory.id] || Award;
+
+    // Preload adjacent images
+    useEffect(() => {
+        const preloadIndices = [
+            (activeCertIndex + 1) % currentCategory.certificates.length,
+            activeCertIndex - 1 < 0 ? currentCategory.certificates.length - 1 : activeCertIndex - 1
+        ];
+
+        preloadIndices.forEach(idx => {
+            const img = new Image();
+            img.src = getImageUrl(currentCategory.certificates[idx].image);
+        });
+    }, [activeCertIndex, currentCategory]);
 
     const slideVariants = {
         enter: (direction) => ({
@@ -198,10 +214,12 @@ const Certificates = () => {
                                         className="relative cursor-pointer overflow-hidden"
                                         onClick={handleImageClick}
                                     >
-                                        <img
+                                        <OptimizedImage
                                             src={getImageUrl(currentCert.image)}
                                             alt={currentCert.title}
-                                            className="w-full h-auto max-h-[500px] object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
+                                            priority={true}
+                                            containerClassName="w-full h-auto max-h-[500px]"
+                                            className="w-full h-full object-contain bg-gray-700/30 transition-transform duration-500 group-hover:scale-105"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent" />
 

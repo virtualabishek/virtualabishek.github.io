@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink, ZoomIn } from "lucide-react";
 import Card from "./extra/Card";
+import OptimizedImage from "./extra/OptimizedImage";
 
 const CertificateCard = ({ certificate, onImageClick, categoryImages }) => {
     const handleClick = () => {
@@ -17,10 +18,11 @@ const CertificateCard = ({ certificate, onImageClick, categoryImages }) => {
                 className="relative cursor-pointer overflow-hidden"
                 onClick={handleClick}
             >
-                <img
+                <OptimizedImage
                     src={categoryImages[certificate.image]}
                     alt={certificate.title}
-                    className="w-full h-48 object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                    containerClassName="w-full h-48"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent" />
 
